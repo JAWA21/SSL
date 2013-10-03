@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>codeBuddies</title>
+    <!-- Obtain Bootstrap style sheet from CDN (online service) so it doesn't have to be on my machine -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">    
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  </head>
+  <body>
+      <header>
+         <div class="logo">
+            <a href="#"> <img src="imgs/logo.png" height="120" width="300"></a>
+         </div>
+
+         <div class="login">
+            <div id="sign"> 
+               <a href="#signupForm">Sign Up</a>
+            </div>
+
+            <form>
+               <input type="text" name="username" id="username" placeholder="Username">
+               <input type="password" name="pass" id="pass" placeholder="Password">
+            </form>
+         </div>  <!-- Close login -->
+      </header> <!-- Close navbar-wrapper -->
+
+    <div class="clearfix"></div>
+
+     <aside>
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Videos</a></li>
+               <li><a href="#">Register</a></li>
+            </ul>
+         </nav>
+     </aside>
+
+     
+   <div class="mainContent container">
+      <h1>This is the container. </h1>
+      <h2>This will be where a gallery will be.</h2>
+
+      <p>At pri vidisse percipitur scriptorem, his cibo signiferumque eu. Sit ne labores nonumes, cu eos admodum omnesque. Aeque gloriatur qui no, dicant legendos ne est, est ad tollit ubique admodum. Dolor audire insolens nec te, sea ne veri habeo.</p>
+
+   <!-- Slider -->
+   <div class="row">
+      <div class="span10" id="slider">
+      <!-- Top part of the slider -->
+         <div class="row">
+            <div class="span6" id="carousel-bounding-box">
+            <div id="myCarousel" class="carousel slide">
+
+               <!-- Carousel items -->
+               <div class="carousel-inner">
+               <div class="active item" data-slide-number="0"><img src="http://placehold.it/770x300&text=one" /></div>
+               <div class="item" data-slide-number="1"><img src="http://placehold.it/770x300&text=two" /></div>
+               <div class="item" data-slide-number="2"><img src="http://placehold.it/770x300&text=three" /></div>
+               <div class="item" data-slide-number="3"><img src="http://placehold.it/770x300&text=four" /></div>
+               <div class="item" data-slide-number="4"><img src="http://placehold.it/770x300&text=five" /></div>
+               <div class="item" data-slide-number="5"><img src="http://placehold.it/770x300&text=six" /></div>
+               </div>
+
+               <!-- Carousel nav -->
+               <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lt;</a>
+               <a class="carousel-control right" href="#myCarousel" data-slide="next">&gt;</a>
+               </div>
+               </div>
+
+               <div class="span4" id="carousel-text"></div>
+                
+            <div style="display: none;" id="slide-content">
+               <div id="slide-content-0">
+               <h2>Slider One</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+
+               <div id="slide-content-1">
+               <h2>Slider Two</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+
+               <div id="slide-content-2">
+               <h2>Slider Three</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+
+               <div id="slide-content-3">
+               <h2>Slider Four</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+
+               <div id="slide-content-4">
+               <h2>Slider Five</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+
+               <div id="slide-content-5">
+               <h2>Slider Six</h2>
+               <p>Lorem Ipsum Dolor</p>
+               <p class="sub-text">October 24 2012 - <a href="#">Read more</a></p>
+               </div>
+            </div>
+         </div>
+       
+      </div>
+   </div> <!--/Slider-->
+
+      <h2>Site Overview / Description</h2>
+      <p>Vel inermis argumentum dissentiet in, oporteat explicari per an. Ius iudico utamur saperet id, tale pertinacia cu vis. No zril nusquam splendide sit, ad solum causae vel, quis dicat vis no. Ea nec noster aperiam albucius, at ignota eruditi sit.</p>
+
+      <h2>Recent Blog Posts</h2>
+      <p>Ius in eius lorem, vis ex elitr facete commodo, et qui unum partiendo. Ex tation conceptam scripserit pro, sit veritus habemus eleifend ut. Quas sonet dissentias ei cum. Nam nobis maiestatis ut. Timeam facilis convenire sit ad, sed id stet populo. At sit mundi populo inermis.</p>
+   </div> <!-- close mainContent -->
+
+
+      <footer>
+         <p>&copy; All rights reserved</p>
+         <ul class="footerNav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Admin</a></li>
+         </ul>
+      </footer>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <!-- Obtain Bootstrap javascript from CDN (online service) so it doesn't have to be on my machine -->
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+      <script>
+jQuery(document).ready(function($) {
+ 
+$('#myCarousel').carousel({
+interval: 5000
+});
+ 
+$('#carousel-text').html($('#slide-content-0').html());
+ 
+//Handles the carousel thumbnails
+$('[id^=carousel-selector-]').click( function(){
+var id_selector = $(this).attr("id");
+var id = id_selector.substr(id_selector.length -1);
+var id = parseInt(id);
+$('#myCarousel').carousel(id);
+});
+ 
+ 
+// When the carousel slides, auto update the text
+$('#myCarousel').on('slid', function (e) {
+var id = $('.item.active').data('slide-number');
+$('#carousel-text').html($('#slide-content-'+id).html());
+});
+ 
+ 
+});
+</script>
+   </body>
+</html>

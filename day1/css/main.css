@@ -1,0 +1,93 @@
+/*
+light blue =	#96d8eb
+
+*/
+
+body {
+   /* padding-top: 60px;*/ /* 60px to make the container go all the way to the bottom of the topbar */
+    background-color: #000;
+    max-width: 1020px;
+    margin: 0 auto;
+    min-height: 1020px;
+}
+
+.container {
+	width: 900px;
+}
+
+.logo {
+	float:left;
+}
+
+.logo a:hover {
+	background-color: none;
+}
+
+#sign {
+	margin-left: 175px;
+	padding-bottom: 5px;
+}
+
+.login {
+	padding-top: 40px;
+	float: right;
+}
+
+.login input {
+	border: none;
+	border-radius: 0;
+	width: 100px;
+}
+
+.login input[type="text"]:focus, .login input[type="password"]:focus {
+	border-color: rgba(126, 239, 104, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+	outline: 0 none;
+}
+
+nav {
+	float: left;
+	margin-top: 10px;
+}
+
+nav ul { 
+	list-style-type: none; 
+	padding: 5px;
+	margin: 5px;
+}
+
+nav ul li {
+	padding-top: 10px;
+}
+
+a, a:hover {
+	padding: 5px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #fff;
+}
+
+.mainContent {
+	float: left;
+	margin-left: 30px;
+	min-height: 500px;
+}
+
+footer {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+footer p{
+	float: left;
+
+}
+
+.footerNav li{
+	float: left;
+	margin-left: 20px;
+	padding-left: 20px;
+	display: inline;
+}
